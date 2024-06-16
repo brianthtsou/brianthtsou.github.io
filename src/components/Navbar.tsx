@@ -28,16 +28,16 @@ function Navbar() {
         </div>
 
         <div className="hidden md:flex md:flex-row flex-col items-center justify-end md:space-x-1 pb-3 md:pb-0 navigation-menu">
-          <a href="#" className="py-2 px-3 block">
+          <a href="#" className="py-2 px-4 block">
             About
           </a>
-          <a href="#" className="py-2 px-3 block">
+          <a href="#" className="py-2 px-4 block">
             Experience
           </a>
-          <a href="#" className="py-2 px-3 block">
+          <a href="#" className="py-2 px-4 block">
             Projects
           </a>
-          <a href="#" className="py-2 px-3 block">
+          <a href="#" className="py-2 px-4 block">
             Contact
           </a>
         </div>
