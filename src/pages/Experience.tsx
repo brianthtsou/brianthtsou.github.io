@@ -4,6 +4,12 @@ interface GridItemProps {
   visualClass: string;
 }
 
+interface FlexItemProps {
+  children: React.ReactNode;
+  spacingClass: string;
+  visualClass: string;
+}
+
 function GridItem({ children, spacingClass, visualClass }: GridItemProps) {
   return (
     <div
@@ -14,7 +20,32 @@ function GridItem({ children, spacingClass, visualClass }: GridItemProps) {
   );
 }
 
+function FlexItem({ children, spacingClass, visualClass }: FlexItemProps) {
+  return (
+    <div className={`${spacingClass} ${visualClass} w-full sm:w-3/4`}>
+      {children}
+    </div>
+  );
+}
+
 function Experience() {
+  return (
+    <div className="experience-page flex flex-row gap-y-8 sm:gap-y-0">
+      <div className="rounded w-full sm:w-3/4 mx-auto h-auto">
+        <FlexItem spacingClass="py-8" visualClass="bg-blue-100">
+          <div className="basis-3/4 bg-green-100">3/4</div>
+          <div className="basis-1/4 bg-green-400">1/4</div>
+          <div className="space-y-8 sm:px-0">
+            <h1 className="text-5xl font-semibold">Experience</h1>
+            <p className="text-custom-grey-text text-2xl">View LinkedIn</p>
+          </div>
+        </FlexItem>
+      </div>
+    </div>
+  );
+}
+
+function Experience2() {
   return (
     <div className="experience-page grid grid-cols-1 sm:grid-cols-2 items-stretch gap-y-8 sm:gap-y-0 bg-green-100">
       <GridItem spacingClass="py-8" visualClass="bg-blue-100">
@@ -51,3 +82,4 @@ function Experience() {
 }
 
 export default Experience;
+Experience2;
