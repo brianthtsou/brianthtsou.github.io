@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="h-screen">
       <div className="about-page grid grid-cols-1 sm:grid-cols-2 items-stretch gap-y-8 sm:gap-y-0">
-        <div className="rounded w-full sm:w-3/4 mx-auto h-auto">
+        <div className="rounded w-full mx-auto h-auto">
           <div className="space-y-8 px-8 sm:px-0">
             <h1 className="text-5xl font-semibold">About</h1>
             <p className="text-custom-grey-text text-2xl">
