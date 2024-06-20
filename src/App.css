@@ -1,11 +1,21 @@
 .about-page {
   margin-top: 10vh; /* Adjust the value to increase or decrease the gap */
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; /* Assuming you want to maintain the 5% margin from each side */
 }
 
 .experience-page {
   margin-top: 20vh; /* Adjust the value to increase or decrease the gap */
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; /* Assuming you want to maintain the 5% margin from each side */
+}
+
+/* Media Query for Ultrawide Screens */
+@media (min-width: 1920px) {
+  .about-page,
+  .experience-page {
+    width: 70%; /* Adjust the width to a suitable percentage or fixed width */
+  }
 }
