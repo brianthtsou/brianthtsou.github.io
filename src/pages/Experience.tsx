@@ -29,15 +29,11 @@ function FlexItem({ children, spacingClass, visualClass }: FlexItemProps) {
 function Experience() {
   return (
     <div className="h-screen experience-page">
-      <div className="flex justify-left items-center my-8">
-        {" "}
-        <div className="grid grid-cols-1 place-items-center">
-          {" "}
-          {/* Use grid-cols-1 if you want a single column layout */}
-          <div className="space-y-4">
-            <h1 className="text-5xl font-semibold">Experience</h1>
-            <p className="text-custom-grey-text text-2xl">View LinkedIn</p>
-          </div>
+      <div className="grid grid-cols-1 px-8 sm:px-0">
+        {/* Use grid-cols-1 if you want a single column layout */}
+        <div className="space-y-4">
+          <h1 className="text-5xl font-semibold">Experience</h1>
+          <p className="text-custom-grey-text text-2xl">View LinkedIn</p>
         </div>
       </div>
       {/* 2nd row */}
