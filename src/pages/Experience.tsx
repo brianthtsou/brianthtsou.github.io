@@ -43,7 +43,7 @@ function ExperienceItem({
 function Experience() {
   return (
     // Header
-    <div className="h-screen experience-page">
+    <div className="h-screen page experience-page">
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Experience</h1>
@@ -51,7 +51,7 @@ function Experience() {
         </div>
       </div>
       {/* grid of experience items */}
-      <div className="grid grid-cols-6 space-y-6">
+      <div className="grid grid-cols-6 gap-y-6">
         <GridItem
           spacingClass="col-span-6 sm:col-span-5"
           visualClass="bg-blue-100"
