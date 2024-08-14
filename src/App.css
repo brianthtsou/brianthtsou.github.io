@@ -10,7 +10,12 @@
 }
 
 .experience-page {
-  margin-top: 20vh; /* Adjust the value to increase or decrease the gap */
+  margin-top: 5vh; /* Adjust the value to increase or decrease the gap */
+  /* Assuming you want to maintain the 5% margin from each side */
+}
+
+.projects-page {
+  margin-top: 5vh; /* Adjust the value to increase or decrease the gap */
   /* Assuming you want to maintain the 5% margin from each side */
 }
 

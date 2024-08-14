@@ -43,7 +43,7 @@ function ExperienceItem({
 function Experience() {
   return (
     // Header
-    <div className="h-screen page experience-page">
+    <div className="min-h-screen page experience-page bg-green-100">
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Experience</h1>

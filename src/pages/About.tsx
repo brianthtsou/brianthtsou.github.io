@@ -2,7 +2,7 @@ import headshot from "../assets/headshot.jpg";
 
 function About() {
   return (
-    <div className="h-screen page">
+    <div className="min-h-screen page flex bg-red-100">
       <div className="about-page grid grid-cols-1 sm:grid-cols-2 items-stretch gap-y-8 sm:gap-y-0">
         <div className="rounded w-full mx-auto h-auto">
           <div className="space-y-8 px-8 sm:px-0">

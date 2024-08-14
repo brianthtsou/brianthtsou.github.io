@@ -4,14 +4,18 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
+import ContactMe from "./pages/ContactMe";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <About />
-      <Experience />
-      <Projects />
+      <div className="flex flex-col">
+        <Navbar />
+        <About />
+        <Experience />
+        <Projects />
+        <ContactMe />
+      </div>
     </>
   );
 }
