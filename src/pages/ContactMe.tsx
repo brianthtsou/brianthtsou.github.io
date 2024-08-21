@@ -1,3 +1,5 @@
+import headshot from "../assets/laguna-torre-milky-way-1.jpg";
+
 function ContactMe() {
   return (
     // Header
@@ -9,39 +11,39 @@ function ContactMe() {
         </div>
       </div>
 
-      {/* Form and picture parent div*/}
+      {/* Form and picture parent div */}
       <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2">
         {/* Form div */}
-        <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
-          <div className="sm:col-span-3">
-            {/* First / last name row */}
-            <label className="block text-sm font-medium leading-6 text-gray-900">
-              First name
-            </label>
-            <div className="mt-2">
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                className="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
-              ></input>
+        <div className="flex flex-col space-y-4">
+          <div className="sm:flex sm:space-x-6">
+            <div className="flex-1">
+              <label className="block text-sm font-medium leading-6 text-gray-900">
+                First name
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  className="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                ></input>
+              </div>
+            </div>
+            <div className="flex-1">
+              <label className="block text-sm font-medium leading-6 text-gray-900">
+                Last name
+              </label>
+              <div className="mt-2">
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  className="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                ></input>
+              </div>
             </div>
           </div>
-          <div className="sm:col-span-3">
-            <label className="block text-sm font-medium leading-6 text-gray-900">
-              Last name
-            </label>
-            <div className="mt-2">
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                className="block w-full rounded-md border-0 pl-2 py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 sm:text-sm sm:leading-6"
-              ></input>
-            </div>
-          </div>
-          {/* Email address row */}
-          <div className="sm:col-span-6">
+          <div>
             <label className="block text-sm font-medium leading-6 text-gray-900">
               Email address
             </label>
@@ -54,8 +56,7 @@ function ContactMe() {
               ></input>
             </div>
           </div>
-          {/* Message row */}
-          <div className="sm:col-span-6">
+          <div>
             <label className="block text-sm font-medium leading-6 text-gray-900">
               Your Message
             </label>
@@ -68,6 +69,16 @@ function ContactMe() {
               ></input>
             </div>
           </div>
+        </div>
+
+        {/* Headshot div */}
+        <div className="sm:relative w-full overflow-hidden">
+          <img
+            src={headshot}
+            alt="Headshot photo"
+            className="rounded-md mx-auto h-auto"
+            style={{ width: "60%" }}
+          ></img>
         </div>
       </div>
     </div>
