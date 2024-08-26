@@ -9,7 +9,7 @@ interface ExperienceItemProps {
   title: string;
   location: string;
   date: string;
-  content: string;
+  content: React.ReactNode;
 }
 
 function GridItem({ children, spacingClass, visualClass }: GridItemProps) {
@@ -79,13 +79,38 @@ function Experience() {
             title="Systems/Software QA Analyst"
             location="Gatekeeper Systems - Abbotsford, BC"
             date="January 2024 - August 2024"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            content={
+              <>
+                In this role, my primary focus was to test proprietary software
+                as well as digital video recording firmware, as well as
+                implementing new tooling into the QA workflow.
+                <br />
+                <br />
+                Some of my key contributions were: <br />
+                <ul className="list-disc list-inside pl-4 pt-2">
+                  <li>
+                    Added and implemented a feature to an internal testing tool
+                    using Python (Flask), streamlining and reducing the time
+                    needed for log data retrieval by 60%
+                  </li>
+                  <li>
+                    Developed Bash scripts to detect the presence of unwanted /
+                    unsecured data within firmware files using Regex filters
+                  </li>
+                  <li>
+                    {" "}
+                    Wrote Powershell scripts to automate the execution processes
+                    of internal testing tools, reducing manual input needed by
+                    80%
+                  </li>
+                  <li>
+                    {" "}
+                    Created and presented detailed test reports and
+                    documentation regarding test execution and outcome
+                  </li>
+                </ul>
+              </>
+            }
           ></ExperienceItem>
         </GridItem>
         <div className="side-col col-span-1 bg-red-100">Hi</div>
@@ -111,15 +136,32 @@ function Experience() {
               </svg>
             }
             title="Accounting Operations Associate"
-            location="Gatekeeper Systems - Abbotsford, BC"
-            date="January 2024 - August 2024"
-            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            location="Bench Accounting - Vancouver, BC"
+            date="August 2020 - December 2021"
+            content={
+              <>
+                My primary responsibilities in this role were to manage and
+                maintain specialized bookkeeping services for a portfolio of 35+
+                US-based small businesses.
+                <br />
+                <br />
+                Some of the key skills and experiences of this role were: <br />
+                <ul className="list-disc list-inside pl-4 pt-2">
+                  <li>
+                    Utilized software platforms such as Salesforce, Tableau,
+                    Slack, Confluence, and Bench’s proprietary bookkeeping
+                    software for cross-departmental collaboration and
+                    communication
+                  </li>
+                  <li>
+                    Spearheaded projects and created documentation for utilizing
+                    Excel macros, particularly to streamline the processing of
+                    data files from common merchant vendors, allowing for ∼60%
+                    reduced turnaround time
+                  </li>
+                </ul>
+              </>
+            }
           ></ExperienceItem>
         </GridItem>
         <div className="side-col col-span-1 bg-red-100">

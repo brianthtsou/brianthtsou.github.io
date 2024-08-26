@@ -7,19 +7,25 @@ function About() {
         <div className="rounded w-full mx-auto h-auto">
           <div className="space-y-8 px-8 sm:px-0">
             <h1 className="text-5xl font-semibold">About</h1>
-            <p className="text-custom-grey-text text-2xl">
-              Hello, I am Brian Tsou!
-            </p>
+            <p className="text-custom-grey-text text-2xl">Hello, I'm Brian!</p>
             <p className="text-custom-blue-text text-xl">
-              "Excepteur efficient emerging, minim veniam anim aute carefully
-              curated Ginza conversation exquisite perfect nostrud nisi
-              intricate Content. Qui international first-class nulla ut.
-              Punctual adipisicing, essential lovely queen tempor eiusmod irure.
-              Exclusive izakaya charming Scandinavian impeccable aute quality of
-              life soft power pariatur Melbourne occaecat discerning. Qui
-              wardrobe aliquip, et Porter destination Toto remarkable officia
-              Helsinki excepteur Basset hound. Zürich sleepy perfect
-              consectetur."
+              I'm currently a 3rd - 4th year Computing Science student at Simon
+              Fraser University, and I am currently on co-op at PayByPhone as a
+              Software Test Developer. <br></br>
+              <br></br> I am familiar with Python, Javascript, Java, C/C++,
+              HTML/CSS, and SQL; some of the frameworks / technologies I am
+              familiar with are Flask, Django, React, Express, and Node. You can
+              view my resume below for more details!
+              <br></br>
+              <br></br>I hold a Bachelor's degree in Biology from the University
+              of British Columbia, and am currently pursuing my second degree in
+              Computing Science from Simon Fraser University.
+              <br></br>
+              <br></br>
+              If you have any more questions about me or my background, or you
+              just want to chat about programming, school/experiences, or life
+              in general, feel free to reach out! I'm always happy to connect
+              with and meet new people!
             </p>
             <div className="text-center sm:text-left">
               <button
