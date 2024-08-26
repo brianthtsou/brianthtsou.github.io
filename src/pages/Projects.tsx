@@ -25,7 +25,7 @@ function ProjectItem({ svg, title, stack, content }: ProjectItemProps) {
 function Projects() {
   return (
     // Header
-    <div className="sm:h-screen page projects-page bg-green-300">
+    <div id="projects" className="sm:h-screen page projects-page bg-green-300">
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Projects</h1>
@@ -41,11 +41,11 @@ function Projects() {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               {" "}
               <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -66,11 +66,11 @@ function Projects() {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               {" "}
               <path stroke="none" d="M0 0h24v24H0z" />{" "}
@@ -91,11 +91,11 @@ function Projects() {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              stroke-width="2"
+              strokeWidth="2"
               stroke="currentColor"
               fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               {" "}
               <path stroke="none" d="M0 0h24v24H0z" />{" "}
