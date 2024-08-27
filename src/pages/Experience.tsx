@@ -32,9 +32,9 @@ function ExperienceItem({
       <div className="px-8 sm:px-0">{svg}</div>
       <div className="space-y-2 px-8 sm:px-0">
         <h1 className="text-2xl">{title}</h1>
-        <p className="text-custom-grey-text text-lg">{location}</p>
-        <p className="text-custom-grey-text text-lg">{date}</p>
-        <p className="text-custom-blue-text text-lg">{content}</p>
+        <div className="text-custom-grey-text text-lg">{location}</div>
+        <div className="text-custom-grey-text text-lg">{date}</div>
+        <div className="text-custom-blue-text text-lg">{content}</div>
       </div>
     </div>
   );
