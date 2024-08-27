@@ -13,7 +13,7 @@ function ProjectItem({ svg, title, stack, content }: ProjectItemProps) {
       </div>
       <div className="space-y-2 my-6 px-8 sm:px-0 flex-col flex justify-center items-center">
         <h1 className="text-2xl">{title}</h1>
-        <p className="text-custom-grey-text text-lg">{stack}</p>
+        <p className="text-custom-grey-text text-lg text-center">{stack}</p>
         <p className="text-custom-blue-text text-lg text-center mx-6">
           {content}
         </p>
@@ -56,8 +56,8 @@ function Projects() {
             </svg>
           }
           title="Spotify Playlist Generator"
-          stack="Jan 2020 - Jan 2021"
-          content="Another subheading—maybe it’s related to the image on the left, or the button below "
+          stack="Python, Flask, HTML/CSS, Javascript, Bootstrap, SQLAlchemy"
+          content="A web application connected to a user's Spotify account that creates personalized playlists based on their music taste!"
         ></ProjectItem>
         <ProjectItem
           svg={
@@ -81,8 +81,8 @@ function Projects() {
             </svg>
           }
           title="E-Commerce Web Application"
-          stack="Jan 2020 - Jan 2021"
-          content="Another subheading—maybe it’s related to the image on the left, or the button below "
+          stack="Python, Django, HTML/CSS, Bootstrap, SQLite3"
+          content="A full stack web application that allows users to create accounts, list and bid on items for auction, and comment on and keep track of item postings."
         ></ProjectItem>
         <ProjectItem
           svg={
@@ -105,9 +105,9 @@ function Projects() {
               <polyline points="12 16 12 11 14 12" />
             </svg>
           }
-          title="E-Commerce Web Application"
-          stack="Jan 2020 - Jan 2021"
-          content="Another subheading—maybe it’s related to the image on the left, or the button below "
+          title="Productivity Bot - Discord.js"
+          stack="JavaScript, Node, MongoDB"
+          content="Productivity tracking Discord bot that can be added to servers, keeping track of days worked via messages and leaderboards, with data stored in MongoDB"
         ></ProjectItem>
       </div>
     </div>
