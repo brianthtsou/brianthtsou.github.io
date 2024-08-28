@@ -1,23 +1,26 @@
 interface ProjectItemProps {
+  link: string;
   svg: React.ReactNode;
   title: string;
   stack: string;
   content: string;
 }
 
-function ProjectItem({ svg, title, stack, content }: ProjectItemProps) {
+function ProjectItem({ svg, link, title, stack, content }: ProjectItemProps) {
   return (
     <div className="bg-white">
-      <div className="my-6 px-8 sm:px-0 flex justify-center items-center">
-        {svg}
-      </div>
-      <div className="space-y-2 my-6 px-8 sm:px-0 flex-col flex justify-center items-center">
-        <h1 className="text-2xl">{title}</h1>
-        <p className="text-custom-grey-text text-lg text-center">{stack}</p>
-        <p className="text-custom-blue-text text-lg text-center mx-6">
-          {content}
-        </p>
-      </div>
+      <a href={link}>
+        <div className="my-6 px-8 sm:px-0 flex justify-center items-center">
+          {svg}
+        </div>
+        <div className="space-y-2 my-6 px-8 sm:px-0 flex-col flex justify-center items-center">
+          <h1 className="text-2xl">{title}</h1>
+          <p className="text-custom-grey-text text-lg text-center">{stack}</p>
+          <p className="text-custom-blue-text text-lg text-center mx-6">
+            {content}
+          </p>
+        </div>
+      </a>
     </div>
   );
 }
@@ -29,7 +32,9 @@ function Projects() {
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Projects</h1>
-          <p className="text-custom-grey-text text-2xl">View Github</p>
+          <p className="text-custom-grey-text text-2xl">
+            <a href="https://www.github.com/brianthtsou">View Github</a>
+          </p>
         </div>
       </div>
       {/* Project grid */}
@@ -55,6 +60,7 @@ function Projects() {
               <polyline points="12 16 12 11 14 12" />
             </svg>
           }
+          link="https://github.com/brianthtsou/SpotifyPlaylistGeneratorV2"
           title="Spotify Playlist Generator"
           stack="Python, Flask, HTML/CSS, Javascript, Bootstrap, SQLAlchemy"
           content="A web application connected to a user's Spotify account that creates personalized playlists based on their music taste!"
@@ -80,6 +86,7 @@ function Projects() {
               <polyline points="12 16 12 11 14 12" />
             </svg>
           }
+          link="https://github.com/brianthtsou/ecommerce-auction-app"
           title="E-Commerce Web Application"
           stack="Python, Django, HTML/CSS, Bootstrap, SQLite3"
           content="A full stack web application that allows users to create accounts, list and bid on items for auction, and comment on and keep track of item postings."
@@ -105,6 +112,7 @@ function Projects() {
               <polyline points="12 16 12 11 14 12" />
             </svg>
           }
+          link="https://github.com/brianthtsou/productivity-bot"
           title="Productivity Bot - Discord.js"
           stack="JavaScript, Node, MongoDB"
           content="Productivity tracking Discord bot that can be added to servers, keeping track of days worked via messages and leaderboards, with data stored in MongoDB"
