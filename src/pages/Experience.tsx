@@ -50,7 +50,9 @@ function Experience() {
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Experience</h1>
-          <p className="text-custom-grey-text text-2xl">View LinkedIn</p>
+          <p className="text-custom-grey-text text-2xl">
+            <a href="https://www.linkedin.com/in/brianthtsou/">View LinkedIn</a>
+          </p>
         </div>
       </div>
       {/* grid of experience items */}
