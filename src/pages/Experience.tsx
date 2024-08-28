@@ -31,15 +31,15 @@ function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <div>
-      <a href={link}>
-        <div className="px-8 sm:px-0">{svg}</div>
-        <div className="space-y-2 px-8 sm:px-0">
-          <h1 className="text-2xl">{title}</h1>
-          <div className="text-custom-grey-text text-lg">{location}</div>
-          <div className="text-custom-grey-text text-lg">{date}</div>
-          <div className="text-custom-blue-text text-lg">{content}</div>
+      <div className="px-8 sm:px-0">{svg}</div>
+      <div className="space-y-2 px-8 sm:px-0">
+        <h1 className="text-2xl">{title}</h1>
+        <div className="text-custom-grey-text text-lg">
+          <a href={link}>{location}</a>
         </div>
-      </a>
+        <div className="text-custom-grey-text text-lg">{date}</div>
+        <div className="text-custom-blue-text text-lg">{content}</div>
+      </div>
     </div>
   );
 }
@@ -57,7 +57,7 @@ function Experience() {
         </div>
       </div>
       {/* grid of experience items */}
-      <div className="grid grid-cols-6 gap-y-6">
+      <div className="grid grid-cols-6 gap-y-12">
         <GridItem spacingClass="col-span-6 sm:col-span-5" visualClass="">
           <ExperienceItem
             link="https://www.gatekeeper-systems.com/"
