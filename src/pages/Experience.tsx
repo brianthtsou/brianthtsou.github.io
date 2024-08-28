@@ -5,6 +5,7 @@ interface GridItemProps {
 }
 
 interface ExperienceItemProps {
+  link: string;
   svg: React.ReactNode;
   title: string;
   location: string;
@@ -21,6 +22,7 @@ function GridItem({ children, spacingClass, visualClass }: GridItemProps) {
 }
 
 function ExperienceItem({
+  link,
   svg,
   title,
   location,
@@ -29,13 +31,15 @@ function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <div>
-      <div className="px-8 sm:px-0">{svg}</div>
-      <div className="space-y-2 px-8 sm:px-0">
-        <h1 className="text-2xl">{title}</h1>
-        <div className="text-custom-grey-text text-lg">{location}</div>
-        <div className="text-custom-grey-text text-lg">{date}</div>
-        <div className="text-custom-blue-text text-lg">{content}</div>
-      </div>
+      <a href={link}>
+        <div className="px-8 sm:px-0">{svg}</div>
+        <div className="space-y-2 px-8 sm:px-0">
+          <h1 className="text-2xl">{title}</h1>
+          <div className="text-custom-grey-text text-lg">{location}</div>
+          <div className="text-custom-grey-text text-lg">{date}</div>
+          <div className="text-custom-blue-text text-lg">{content}</div>
+        </div>
+      </a>
     </div>
   );
 }
@@ -62,6 +66,7 @@ function Experience() {
           visualClass="bg-blue-100"
         >
           <ExperienceItem
+            link="https://www.gatekeeper-systems.com/"
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,6 +126,7 @@ function Experience() {
           visualClass="bg-blue-100"
         >
           <ExperienceItem
+            link="https://www.bench.co/"
             svg={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
