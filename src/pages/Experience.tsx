@@ -47,10 +47,7 @@ function ExperienceItem({
 function Experience() {
   return (
     // Header
-    <div
-      id="experience"
-      className="min-h-screen page experience-page bg-green-100"
-    >
+    <div id="experience" className="min-h-screen page experience-page">
       <div className="grid grid-cols-1 px-8 sm:px-0 py-8">
         <div className="space-y-4">
           <h1 className="text-5xl font-semibold">Experience</h1>
@@ -61,10 +58,7 @@ function Experience() {
       </div>
       {/* grid of experience items */}
       <div className="grid grid-cols-6 gap-y-6">
-        <GridItem
-          spacingClass="col-span-6 sm:col-span-5"
-          visualClass="bg-blue-100"
-        >
+        <GridItem spacingClass="col-span-6 sm:col-span-5" visualClass="">
           <ExperienceItem
             link="https://www.gatekeeper-systems.com/"
             svg={
@@ -120,11 +114,8 @@ function Experience() {
             }
           ></ExperienceItem>
         </GridItem>
-        <div className="side-col col-span-1 bg-red-100">Hi</div>
-        <GridItem
-          spacingClass="col-span-6 sm:col-span-5"
-          visualClass="bg-blue-100"
-        >
+        <div className="side-col col-span-1"></div>
+        <GridItem spacingClass="col-span-6 sm:col-span-5" visualClass="">
           <ExperienceItem
             link="https://www.bench.co/"
             svg={
@@ -172,8 +163,8 @@ function Experience() {
             }
           ></ExperienceItem>
         </GridItem>
-        <div className="side-col col-span-1 bg-red-100">
-          <br></br>Hi
+        <div className="side-col col-span-1">
+          <br></br>
         </div>
       </div>
     </div>
