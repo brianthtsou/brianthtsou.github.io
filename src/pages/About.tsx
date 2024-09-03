@@ -2,8 +2,8 @@ import headshot from "../assets/headshot.jpg";
 
 function About() {
   return (
-    <div id="about" className="min-h-screen page flex my-8 sm:my-0">
-      <div className="about-page grid grid-cols-1 sm:grid-cols-2 items-stretch gap-y-8 sm:gap-y-0">
+    <div id="about" className="about-page min-h-screen page flex my-8 sm:my-0">
+      <div className="my-36 grid grid-cols-1 sm:grid-cols-2 items-stretch gap-y-8 sm:gap-y-0">
         <div className="rounded w-full mx-auto h-auto">
           <div className="space-y-8 px-8 sm:px-0">
             <h1 className="text-5xl font-semibold">About</h1>
