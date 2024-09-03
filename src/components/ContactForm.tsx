@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState("");
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.persist();
     e.preventDefault();
     setIsSubmitting(true);
@@ -14,18 +14,18 @@ const ContactForm = () => {
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
+        e.currentTarget,
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
-        (result) => {
+        () => {
           setStateMessage("Message sent!");
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage("");
           }, 5000); // hide message after 5 seconds
         },
-        (error) => {
+        () => {
           setStateMessage("Something went wrong, please try again later");
           setIsSubmitting(false);
           setTimeout(() => {
@@ -35,7 +35,7 @@ const ContactForm = () => {
       );
 
     // Clears the form after sending the email
-    e.target.reset();
+    e.currentTarget.reset();
   };
 
   return (
